@@ -1,0 +1,14 @@
+{
+  "name": "endorphin-studio/browser-detector-data-yaml",
+  "description": "Data for Detection",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Serhii Nekhaienko",
+      "email": "serhii.nekhaienko@gmail.com"
+    }
+  ],
+  "require": {
+  }
+}

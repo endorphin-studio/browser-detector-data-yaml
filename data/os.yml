@@ -1,0 +1,92 @@
+########################################################################
+# @author Serhii Nekhaienko <sergey.nekhaenko@gmail.com>
+# @license GPL
+# @copyright Serhii Nekhaienko &copy 2019
+# @version 1.0.8
+# @project endorphin-studio/browser-detector-data
+########################################################################
+os:
+    win:
+        mobile:
+            Windows Mobile:
+                pattern: "(Windows Phone OS|Windows Phone|Windows+Phone|Windows+Phone+OS)"
+                version: "(Windows Phone OS|Windows Phone|Windows+Phone|Windows+Phone+OS)"
+                attributes:
+                    isMobile: true
+                    isTouch: true
+        desktop:
+            Windows:
+                pattern: "(Windows|Win|WP)"
+                version: "(Windows|Win|WP)"
+    mac:
+        tv:
+            Apple:
+                pattern: "AppleTV"
+        mobile:
+            iOS:
+                pattern: "(iPhone OS|iPad|iPod|like MAC OS X)"
+                version: "(iPhone OS|iPad|iPod|like MAC OS X)"
+                attributes:
+                    isTouch: true
+        desktop:
+            Mac OS X:
+                default: true
+    unix:
+        mobile:
+            Aliyun OS:
+                pattern: "(Aliyun OS|AliyunOS)"
+                version: "AliyunOS"
+            Baidu Yi:
+                default: true
+            Android:
+                pattern: "(; |\\()Android"
+                version: "Android"
+                attributes:
+                    isMobile: true
+                    isTouch: true
+            Bada:
+                default: true
+            Maemo:
+                default: true
+            Tizen:
+                default: true
+            BlackBerry OS:
+                pattern: "(BlackBerry)"
+                version: "(BlackBerry)"
+            Qtopia:
+                default: true
+        console:
+            Playstation Os:
+                pattern: "(PlayStation 4|PlayStation Vita)"
+                version: "(PlayStation Vita|PlayStation Vita)"
+        tv:
+            Android:
+                pattern: "(GoogleTV|SmartTv|PhilipsTV|OMI)"
+            tvOS:
+                pattern: "AppleTV"
+        desktop:
+            AROS:
+                pattern: "(Paros|Aros)"
+                version: "(Paros|Aros)"
+            Amiga:
+                default: true
+            Ubuntu:
+                default: true
+            Chromium OS:
+                pattern: "CrOS"
+                version: "CrOS"
+            AIX:
+                default: true
+            Arch Linux:
+                pattern: "ARCHOS"
+                version: "ARCHOS"
+            Linux:
+                pattern: "(Linux|X11)"
+                version: "(Linux|X11)"
+            BeOS:
+                default: true
+    default:
+        name: "not available"
+        type: "not available"
+        family: "not available"
+        version: "not available"
